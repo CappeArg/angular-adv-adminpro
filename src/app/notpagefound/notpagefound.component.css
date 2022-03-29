@@ -35,7 +35,7 @@ Error Page
 
 .error-box {
     height: 100%;
-    position: top;
+    position: fixed;
     width: 100%;
 }
 
