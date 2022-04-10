@@ -1,4 +1,4 @@
-import { Component, OnChanges } from '@angular/core';
+import { Component } from '@angular/core';
 import { ChartData } from 'chart.js';
 
 
@@ -11,23 +11,18 @@ import { ChartData } from 'chart.js';
 })
 export class Grafica1Component {
 
-  labels1:string[]=[];
   constructor(){
 
   
   }
 
-        //Cambio la documentación de Charts -- esto no funciona
-
-  lables1 : string[] =  [ 'Dato2', 'Dato3', 'Dato4' ];
-  data1: ChartData<'doughnut'> = {
-    labels: this.lables1,
-    datasets: [
-      { data: [ 350, 450, 100 ],
-        backgroundColor: [ '#6857E6', '#009FEE', '#F02059' ],
-        //hoverBackgroundColor: [ '#6857E6', '#009FEE', '#F02059' ]
-      }
-    ]
-  };
-  
+  public etiqueta1:string[]=['Pan', 'Asado', 'Vino','Ensalada' ];
+  public etiqueta2:string[]=['Pescado', 'Carne Vaca', 'Carne Cerdo','Carne de Mamut' ];
+  public etiqueta3:string[]=['Gasolina', 'Gastos de Almacenado', 'Varios','Cableado' ];
+  public etiqueta4:string[]=['Soda', 'Yerba', 'Aceite','Choclo' ];
+ 
+  public data1:any= [35, 45, 10, 20];
+  public data2:any = [99,85,42];
+  public data3:any = [33,710,78];
+  public data4:any = [55,66,22];
 }
