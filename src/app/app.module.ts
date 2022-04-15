@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
+import { FormsModule } from '@angular/forms';
 
 //Módulos Personalizados
 import { AppRoutingModule } from './app-routing.module';
@@ -20,7 +21,8 @@ import { NotpagefoundComponent } from './notpagefound/notpagefound.component';
     BrowserModule,
     AppRoutingModule,
     PagesModule,
-    SharedModule
+    SharedModule,
+    FormsModule
   ],
   bootstrap: [AppComponent]
 })
