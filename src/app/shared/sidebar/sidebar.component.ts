@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { SidebarService } from 'src/app/services/sidebar.service';
 
+declare function customInitFunction(): void;
+
 @Component({
   selector: 'app-sidebar',
   templateUrl: './sidebar.component.html',
@@ -18,6 +20,9 @@ export class SidebarComponent implements OnInit {
    }
 
   ngOnInit(): void {
+
+    customInitFunction();
   }
+
 
 }
